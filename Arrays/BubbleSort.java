@@ -19,18 +19,20 @@ public class  BubbleSort {
 	
 	public static void printArray(int arr[]) {
 		for(int num : arr) {
-			System.out.println();
+			System.out.print(num + " ");
 		}
+		System.out.println();
 	}
 
 	public static void main(String[] args) {
-		int[] arrNumber = {20, 10, 6,1, 3};
-		System.out.println();
+		int[] arrNumber = {20, 10, 6, 1, 3};
+		System.out.println("Original array:");
+		printArray(arrNumber);
 		
-	bubblesort(arrNumber);
+		bubblesort(arrNumber);
 		
-		
-
+		System.out.println("Sorted array:");
+		printArray(arrNumber);
 	}
 
 }
